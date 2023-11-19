@@ -8,48 +8,58 @@
 </head>
 <body>
     <div id="hero">
-
+        <div id="logo_container">
+            <img src="./images/arrow-logo.svg" class="logo" alt="viking arrow">
+            <h2 id="brand">Sveinung K</h2>
+        </div>
+        <div class="gradient_container" id="photo_credit">
+            <p>Photo by <a href="https://www.freepik.com/author/simon19830323">simon19830323</a> on <a href="https://www.freepik.com/premium-photo/beautiful-aurora-wallpaper-3d-rendering_32899103.htm">Freepik</a></p>
+        </div>
     </div>
     <div id="section">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
-        <p>You <em>know</em> you want to.</p>
+        <div class="intro">
+            <p>You wish this was a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+            <p id="want_to">You <em>know</em> you want to.</p>
+        </div>
         <form action="">
-            <section>
-            <h2>Let's do this!</h2>
-            <ul>
-                <li>
-                    <label for="first_name">First name</label>
-                    <input type="text" name="First name" id="first_name" value="Thor">
-                </li>
-                <li>
-                    <label for="last_name">Last Name</label>
-                    <input type="text" name="Last Name" id="last_name" value="Odinson">
-                </li>
-                <li>
-                    <label for="email">Email</label>
-                    <input type="email" name="Email" id="email">
-                </li>
-                <li>
-                    <label for="number">Phone number</label>
-                    <input type="number" name="number" id="number">
-                </li>
-                <li>
-                    <label for="password">Password</label>
-                    <input type="text" name="password" id="password">
-                </li>
-                <li>
-                    <label for="confirm_pw">Confirm Password</label>
-                    <input type="confirm_pw" name="confirm_pw" id="confirm_pw">
-                </li>
-
-            </ul>
+            <section id="form_fill">
+            <h2 class="form_title">Let's do this!</h2>
+            <div class="input">
+                <label for="first-name">First name</label>
+                <input type="text" name="first-name" id="first-name" required>
+            </div>
+            
+            <div class="input">
+                <label for="last-name">Last name</label>
+                <input type="text" name="last-name" id="last-name">
+            </div>
+            
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            
+            <div class="input">
+                <label for="phone-number">Phone number</label>
+                <input type="text" name="phone-number" id="phone-number" minlength="8" maxlength="8">
+            </div>
+            
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="password" name="passwor" id="password" required>
+            </div>
+            
+            <div class="input">
+                <label for="confirm-password">Confirm password</label>
+                <input type="password" name="confirm-password" id="confirm-password" required>
+            </div>
             </section>
-            <section>
-                <button type="submit">Create Account</button>
+            <section id="submit_container">
+                <button type="submit" id="submit_btn">Create Account</button>
+                <p>Already have an account? <a href="" id="login_link">Log in</a></p>
             </section>
         </form>
-        <p>Already have an account?</p>
-        <a href="#">Log in</a>
+        
     </div>
 </body>
 </html>

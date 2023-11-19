@@ -1,0 +1,165 @@
+@font-face {
+    font-family: Norse;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;1,100;1,200;1,300;1,500&display=swap');
+
+:root {
+    --logo-color: #f2c56d;
+    --bg-color: #ede7dd;
+    --btn-color: #84a98c;
+    --btn-hover-color: #7A9C81;
+    --btn-active-color: #5A725E;
+}
+
+body, html {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+#hero {
+    background-image: url(./images/aurora-background.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30%;
+}
+
+.logo {
+    width: 60%;
+}
+
+#brand {
+    font-family: 'Norse';
+    color: var(--logo-color);
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.67);
+    font-size: 2rem;
+}
+
+.gradient_container{
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
+
+#photo_credit {
+    margin-top: auto;
+    font-size: 0.6rem;
+    color: white;
+    text-align: center;
+}
+
+#photo_credit > p > a {
+    color: white;
+}
+
+#section {
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.intro {
+    padding-left: 6%;
+    padding-right: 10%;
+    margin-bottom: 50px;
+    margin-top: 10%;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+#want_to {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#form_fill {
+    padding-left: 6%;
+    padding-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background-color: white;
+    box-shadow: 4px 3px 3px 0px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+
+}
+
+.form_title {
+    width: 100%;
+}
+
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    text-transform: uppercase;
+}
+
+input {
+    font-weight: 200;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid black;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px var(--btn-color);
+}
+
+#submit_container {
+    padding-left: 6%;
+    padding-right: 10%;
+    padding-top: 40px;
+    color: gray;
+}
+
+#submit_btn {
+    font-family: helvetica;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 0px solid #000000;
+    background: var(--btn-color);
+}
+
+#submit_btn:hover {
+    color: #FFFFFF;
+    background: var(--btn-hover-color);
+}
+
+#submit_btn:active {
+    color: #FFFFFF;
+    background: var(--btn-active-color);
+}
+
+#login_link {
+    color: var(--btn-active-color);
+    font-weight: 400;
+}
+
